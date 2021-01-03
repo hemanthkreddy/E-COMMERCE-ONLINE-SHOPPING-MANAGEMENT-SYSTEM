@@ -11,9 +11,8 @@ class Order(models.Model):
         ("CANCELLED","cancelled"),
         ("COMPLETED","Completed")
     )
-    method = (
-        ("COD","Cod"),                  
-        ("ONLINE","Online")
+    method = (                  
+        ("ONLINE","Online"),
     )
     order_status=models.CharField(max_length=15,choices=orderStatus)
     payment_method=models.CharField(max_length=15,choices=method)
