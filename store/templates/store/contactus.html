@@ -1,0 +1,31 @@
+{% extends "./base.html" %}
+{% load crispy_forms_tags %}    <! crispy form for bootstrap effect >
+
+
+{% block content%}
+<!--
+
+//-->
+<div>
+    <br>
+    <h3 class="p-1 mb-1 bg-info text-dark">Store Address:</h3>
+    <h4><span class="font-italic"> Sri Venkateshwara Layout, NO3 9THMAIN 2ND CROSS, <br>GB Palya Rd, NEAR ICICI ATM, Hongasandra,<br> Bengaluru, Karnataka 560068</span></h4>
+</div>
+<br>
+<div>
+  <h4 class="p-1 mb-1 bg-info text-dark" >Store Images</h4>
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height='320px' width='400px' class="d-block w-40" src="https://logoff.in/wp-content/uploads/2020/06/IMG_20200617_164650_1080x1080-768x768.jpg"  alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img height='320px' width='400px' class="d-block w-40" src="https://logoff.in/wp-content/uploads/2020/06/IMG_20200617_164630_1_1080x1080-768x768.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img height='320px' width='400px' class="d-block w-40" src="https://logoff.in/wp-content/uploads/2020/06/IMG_20200617_164738_1_1080x1080-768x768.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+{% endblock %}
